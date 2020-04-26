@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "Twtter Ad Remover",
+  "description": "Hide promoted tweets",
+  "version": "0.1",
+  "icons": {
+    "64": "64.png",
+    "256": "256.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["twitteradremover.js"],
+      "matches": ["*://twitter.com/*"]
+    }
+  ]
+}
